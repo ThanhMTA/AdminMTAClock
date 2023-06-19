@@ -17,7 +17,7 @@ function Customers() {
     return (
         <Space size={20} direction="vertical">
             <Typography.Title level={4}>Customers</Typography.Title>
-            <Table
+            <Table style={{ width: 1100 }}
                 loading={loading}
                 columns={[
                     {

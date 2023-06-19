@@ -124,7 +124,9 @@ function Dashboard() {
 function DashboardCard({ title, value, icon }) {
     return (
         <Card>
-            <Space direction="horizontal">
+            <Space direction="horizontal"
+                style={{ width: 220, height: 80 }}
+            >
                 {icon}
                 <Statistic title={title} value={value} />
             </Space>
@@ -147,6 +149,7 @@ function RecentOrders() {
         <>
             <Typography.Text>Recent Orders</Typography.Text>
             <Table
+                style={{ width: 600 }}
                 columns={[
                     {
                         title: "Title",
